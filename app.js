@@ -26,19 +26,7 @@ for (var j in images) {
     console.log(((images[j].path)));
     
 
-    var heading =  $("<div>").text((JSON.stringify((images[j].heading))));
-    heading.addClass("heading");
 
-    $("#imageLeft").append(heading);
-
-    var description = $("<div>").text((JSON.stringify((images[j].description))));
-    description.addClass("heading");
-    $("#imageLeft").append(description);
-
-    var image = $("<img>");
-    image.addClass("leaselabs-image");
-    image.attr("src", images[j].path);
-    $("#imageLeft").append(image);
 }
 
 });
@@ -53,6 +41,8 @@ for (var j in images) {
 
 
 // findInObj(images, "heading", "description");
+
+
 
 
 // $(document).ready(function () {
