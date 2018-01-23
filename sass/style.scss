@@ -23,7 +23,7 @@
     
     // Navbar Begin
     .leaseLabs {
-        width: 50%;
+        width: 100%;
     }
     
     .parallelogram {
@@ -39,8 +39,11 @@
     }
     
     //Container Left
+  
+    
     #containerLeft ul {
         list-style: none;
+        margin-left: -40px;
     }
     
     #containerLeft li a {
@@ -97,22 +100,22 @@
     
     // Container Right
     #containerRight {
-        border: 2px solid rgb(196, 195, 195);
+        border: 2px solid rgb(240, 233, 233);
         border-top: none;
+        border-bottom: 7px solid rgb(240, 233, 233);
         padding: 10px;
     }
     
     #image {
         border: 2px solid $leaselab;
-        height: 400px;
-        width: 400px;
+        height: 240px;
+        width: 320px;
     }
     
-    .container {
-        position: relative;
-        width: 50%;
-    }
-    
+    // .container {
+    //     position: relative;
+    //     width: 100%;
+    // }
     .image {
         display: block;
         width: 100%;
@@ -125,8 +128,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 400px;
-        width: 400px;
+        height: 100%;
+        width: 100%;
         opacity: 0;
         transition: .5s ease;
         background-color: #008CBA;
@@ -150,6 +153,24 @@
     @media only screen and (max-width: 34em) {
         #image {
             width: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .leaseLabs {
+            width: 50%;
         }
         .overlay {
             position: absolute;

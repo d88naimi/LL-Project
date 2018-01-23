@@ -17,7 +17,7 @@ h1 {
   padding: 25px; }
 
 .leaseLabs {
-  width: 50%; }
+  width: 100%; }
 
 .parallelogram {
   width: 110px;
@@ -30,7 +30,8 @@ ul.nav a:hover {
   text-transform: uppercase; }
 
 #containerLeft ul {
-  list-style: none; }
+  list-style: none;
+  margin-left: -40px; }
 
 #containerLeft li a {
   text-decoration: none;
@@ -80,18 +81,15 @@ ul.nav a:hover {
   z-index: 0; }
 
 #containerRight {
-  border: 2px solid #c4c3c3;
+  border: 2px solid #f0e9e9;
   border-top: none;
+  border-bottom: 7px solid #f0e9e9;
   padding: 10px; }
 
 #image {
   border: 2px solid #00b4ff;
-  height: 400px;
-  width: 400px; }
-
-.container {
-  position: relative;
-  width: 50%; }
+  height: 240px;
+  width: 320px; }
 
 .image {
   display: block;
@@ -104,8 +102,8 @@ ul.nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA; }
@@ -126,6 +124,21 @@ ul.nav a:hover {
 @media only screen and (max-width: 34em) {
   #image {
     width: 100%; }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA; } }
+
+@media only screen and (max-width: 768px) {
+  .leaseLabs {
+    width: 50%; }
   .overlay {
     position: absolute;
     top: 0;
