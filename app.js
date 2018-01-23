@@ -22,27 +22,28 @@ for (var j in images) {
     console.log(images[j]);
     console.log(JSON.stringify((images[j])));
     console.log(JSON.stringify((images[j].heading)));
-    console.log(JSON.stringify((images[j].path)));
+    console.log("------------");
+    console.log(((images[j].path)));
     
 
     var heading =  $("<div>").text((JSON.stringify((images[j].heading))));
     heading.addClass("heading");
 
-    $("#dude").append(heading);
+    $("#imageLeft").append(heading);
 
     var description = $("<div>").text((JSON.stringify((images[j].description))));
     description.addClass("heading");
-    $("#dude").append(description);
+    $("#imageLeft").append(description);
 
     var image = $("<img>");
     image.addClass("leaselabs-image");
-    image.attr("src", (JSON.stringify((images[j].path))));
-    $("#dude").append(image);
+    image.attr("src", images[j].path);
+    $("#imageLeft").append(image);
 }
 
 });
 
-
+// .imageContainer
 
 // $.each(images, function(key, value){
 //     var object = JSON.stringify(key, value);
@@ -52,3 +53,13 @@ for (var j in images) {
 
 
 // findInObj(images, "heading", "description");
+
+
+// $(document).ready(function () {
+//     $("p").mouseover(function () {
+//         $("p").css("background-color", "yellow");
+//     });
+//     $("p").mouseout(function () {
+//         $("p").css("background-color", "lightgray");
+//     });
+// });
