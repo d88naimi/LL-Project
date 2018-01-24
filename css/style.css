@@ -24,6 +24,10 @@ p {
   margin-left: 20px;
   margin-right: 20px; }
 
+ul,
+nav navbar-nav navbar-right {
+  height: 70px; }
+
 .navbar-default {
   background: none; }
 
@@ -143,6 +147,10 @@ h3 {
 #images {
   padding-top: 45px; }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .leaseLabs {
-    height: 200px; } }
+    height: auto;
+    max-width: 180px; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    height: 250px; } }

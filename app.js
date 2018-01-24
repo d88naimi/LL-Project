@@ -13,7 +13,7 @@ var images = {
         heading: 'Beast Image',
         description: 'Image of a beast.',
         path: 'img/beast.jpg'
-    },
+    }
     // testOne: {
     //     heading: 'Beast Image',
     //     description: 'Image of a beast.',
@@ -38,7 +38,7 @@ $(function () {
         console.log(images[j]);
         console.log(JSON.stringify((images[j])));
 
-        // creating the thre column row woth the object and their info dynamically 
+        // creating the three column row with the object and their info dynamically 
         var image = $("<div>", { "class": "row col-xs-12 col-sm-4 col-md-4" });
         var col = $("<div>").addClass("col-xs-12 col-sm-12 col-md-12");
         var divImageContainer = $("<div>").addClass("imageContainer");
@@ -46,7 +46,7 @@ $(function () {
         var divImageOverlay = $("<div>", { "class": "overlay" });
         var text = $("<div>").addClass("text");
         text.html(images[j].heading + "<br>" + images[j].description);
-
+        // append all the vars to image
         divImageOverlay.append(text);
         divImageContainer.append(divImageOverlay);
         col.append(divImageContainer);
