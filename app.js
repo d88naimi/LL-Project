@@ -31,11 +31,14 @@ for (var j in images) {
     var divImageContainer = $("<div>").addClass("imageContainer");
     divImageContainer.css("background-image", 'url("' + images[j].path + '")');
     var divImageOverlay = $("<div>", { "class": "overlay" });
-    divImageContainer.append(divImageOverlay);
     var text = $("<div>").addClass("text");
+    text.html(images[j].heading + " " + images[j].description );
+    
+    divImageOverlay.append(text);
+    divImageContainer.append(divImageOverlay);
     col.append(divImageContainer);
     image.append(col);
-    image.append(text);
+    // image.append(text);
     // col.append(image);
     
     $("#images").append(image);
