@@ -17,48 +17,33 @@ var images = {
 };
 
 
-// $(function () {
-// for (var j in images) {
-//     console.log(images[j]);
-//     console.log(JSON.stringify((images[j])));
-//     console.log(JSON.stringify((images[j].heading)));
-//     console.log("------------");
-//     console.log(((images[j].path)));
+$(function () {
+for (var j in images) {
+    console.log(images[j]);
+
+    console.log(JSON.stringify((images[j])));
+    // console.log(JSON.stringify((images[j].heading)));
+    // console.log("------------");
+    // console.log(((images[j].path)));
     
+    var image = $("<div>", { "class": "row" });
+    var col = $("<div>").addClass("col-xs-12 col-sm-4 col-md-4 col-lg-4");
+    var divImageContainer = $("<div>").addClass("imageContainer");
+    divImageContainer.css("background-image", 'url("' + images[j].path + '")');
+    var divImageOverlay = $("<div>", { "class": "overlay" });
+    divImageContainer.append(divImageOverlay);
+    var text = $("<div>").addClass("text");
+    col.append(divImageContainer);
+    image.append(col);
+    image.append(text);
+    // col.append(image);
+    
+    $("#images").append(image);
+    
+}
+
+});
 
 
-//     var image = $("<div>");
-//     var col = $("<div>").addClass("col-xs-12 col-sm-4 col-md-4 col-lg-4");
-//     var text = $("<div>").addClass("text");
-//     image.append(text);
-//     col.append(image);
-//     console.log("------------");
-//     $("#images").append(col);
-//     image.css("background-image", 'url("' + images[j].path + '")');
-//     image.addClass("imageContainer");
-//     image.addClass("image");
-//     image.addClass("overlay");
-// }
-
-// });
-
-// .imageContainer
-
-// $.each(images, function(key, value){
-//     var object = JSON.stringify(key, value);
-
-//     console.log(object);
-// });
 
 
-// findInObj(images, "heading", "description");
-
-
-// $(document).ready(function () {
-//     $("p").mouseover(function () {
-//         $("p").css("background-color", "yellow");
-//     });
-//     $("p").mouseout(function () {
-//         $("p").css("background-color", "lightgray");
-//     });
-// });
