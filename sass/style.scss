@@ -6,10 +6,14 @@
     }
     
     $leaselab: #00b4ff;
-    $gray: #d4d4d4;
+    $gray: #e5e0e0;
     h1 {
         color: $leaselab;
         margin-bottom: -20px;
+    }
+    
+    p {
+        color: gray;
     }
     
     .wrapper {
@@ -33,6 +37,7 @@
         padding: 10px;
     }
     
+    //logo
     .leaseLabs {
         width: 80%;
     }
@@ -68,6 +73,7 @@
         font-size: 20px;
     }
     
+    // container left bubble chat
     .bubble {
         position: relative;
         display: inline-block;
@@ -110,10 +116,11 @@
         z-index: 0;
     }
     
-    // Container Right
+    // Container Right Begin
     h3 {
         font-style: italic;
         margin-bottom: 20px;
+        color: black;
     }
     
     #containerRight {
@@ -129,7 +136,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border: 2px solid $leaselab;
+        border: 1px solid $leaselab;
     }
     
     .overlay {
@@ -161,5 +168,3 @@
         text-align: center;
         text-transform: uppercase;
     }
-    
-   

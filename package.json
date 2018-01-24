@@ -1,17 +1,15 @@
 {
-    "name": "leaselabs-project",
-    "version": "1.0.0",
-    "description": "Lease Labs Project",
-    "main": "app.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "watch": "nodemon server.js"
-    },
-    "author": "David Naimi",
-    "license": "ISC",
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-sass": "^3.1.0"
-    }
+  "name": "leaselabs-project",
+  "version": "1.0.0",
+  "description": "Lease Labs Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Naimi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }
