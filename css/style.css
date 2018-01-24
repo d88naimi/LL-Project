@@ -9,7 +9,7 @@ h1 {
   margin-bottom: -20px; }
 
 p {
-  color: gray; }
+  color: #808080; }
 
 .wrapper {
   height: auto !important;
@@ -18,18 +18,17 @@ p {
   min-height: 100%;
   /* Positioning */
   margin: 0 auto -100px;
-  padding: 25px; }
+  padding: 40px; }
 
 .navbar-nav > li {
-  margin-left: 25px;
-  margin-right: 25px; }
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .navbar-default {
-  background: none;
-  padding: 10px; }
+  background: none; }
 
 .leaseLabs {
-  width: 80%; }
+  width: 100%; }
 
 .parallelogram {
   width: 110px;
@@ -102,7 +101,8 @@ h3 {
 #containerRight {
   border: 2px solid #f0e9e9;
   border-top: none;
-  border-bottom: 7px solid #f0e9e9; }
+  border-bottom: 7px solid #f0e9e9;
+  padding-bottom: 20px; }
 
 .imageContainer {
   position: relative;
@@ -139,3 +139,10 @@ h3 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase; }
+
+#images {
+  padding-top: 45px; }
+
+@media (max-width: 767px) {
+  .leaseLabs {
+    height: 200px; } }

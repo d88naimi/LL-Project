@@ -1,170 +1,185 @@
-    * {
-        /* Box-model */
-        box-sizing: border-box;
-        /* Positioning */
-        margin: 0;
-    }
-    
-    $leaselab: #00b4ff;
-    $gray: #e5e0e0;
-    h1 {
-        color: $leaselab;
-        margin-bottom: -20px;
-    }
-    
-    p {
-        color: gray;
-    }
-    
-    .wrapper {
-        height: auto !important;
-        height: 100%;
-        /* Box-model */
-        min-height: 100%;
-        /* Positioning */
-        margin: 0 auto -100px;
-        padding: 25px;
-    }
-    
-    // Navbar Begin
-    .navbar-nav>li {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-    
-    .navbar-default {
-        background: none;
-        padding: 10px;
-    }
-    
-    //logo
-    .leaseLabs {
-        width: 80%;
-    }
-    
-    // paralleogram for navbar special
-    .parallelogram {
-        width: 110px;
-        height: 100%;
-        transform: skew(-20deg);
-        background: $leaselab;
-    }
-    
-    ul.nav a:hover {
-        color: $leaselab !important;
-        text-transform: uppercase;
-    }
-    
-    //Container Left
-    #containerLeft ul {
-        list-style: none;
-        margin-left: -40px;
-    }
-    
-    #containerLeft li a {
-        text-decoration: none;
-        color: black;
-        font-size: 15px;
-    }
-    
-    #containerLeft li::before {
-        content: "\2022";
-        color: $leaselab;
-        font-size: 20px;
-    }
-    
-    // container left bubble chat
-    .bubble {
-        position: relative;
-        display: inline-block;
-        max-width: 100%;
-        min-height: 1.5em;
-        padding: 10px;
-        background: $gray;
-        border: $gray solid 4px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 10px;
-        width: 300px;
-        text-align: left;
-        text-transform: uppercase;
-    }
-    
-    .bubble:after {
-        content: "";
-        position: absolute;
-        bottom: -15px;
-        left: 60%;
-        border-style: solid;
-        border-width: 15px 15px 0;
-        border-color: $gray transparent;
-        display: block;
-        width: 0;
-        z-index: 1;
-    }
-    
-    .bubble:before {
-        content: "";
-        position: absolute;
-        bottom: -19.5px;
-        left: calc(60% - 3px);
-        border-style: solid;
-        border-width: 18px 18px 0;
-        border-color: $gray transparent;
-        display: block;
-        width: 0;
-        z-index: 0;
-    }
-    
-    // Container Right Begin
-    h3 {
-        font-style: italic;
-        margin-bottom: 20px;
-        color: black;
-    }
-    
-    #containerRight {
-        border: 2px solid rgb(240, 233, 233);
-        border-top: none;
-        border-bottom: 7px solid rgb(240, 233, 233);
-    }
-    
-    .imageContainer {
-        position: relative;
-        width: 100%;
-        height: 225px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 1px solid $leaselab;
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #008CBA;
-    }
-    
-    .imageContainer:hover .overlay {
-        opacity: 0.4;
-    }
-    
-    .text {
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        text-transform: uppercase;
-    }
+     $leaselab: #00b4ff;
+     $gray: #e5e0e0;
+     $darkgray: #808080;
+     * {
+         /* Box-model */
+         box-sizing: border-box;
+         /* Positioning */
+         margin: 0;
+     }
+     
+     h1 {
+         color: $leaselab;
+         margin-bottom: -20px;
+     }
+     
+     p {
+         color: $darkgray;
+     }
+     
+     .wrapper {
+         height: auto !important;
+         height: 100%;
+         /* Box-model */
+         min-height: 100%;
+         /* Positioning */
+         margin: 0 auto -100px;
+         padding: 40px;
+     }
+     
+     // Navbar Begin
+     .navbar-nav>li {
+         margin-left: 20px;
+         margin-right: 20px;
+     }
+     
+     .navbar-default {
+         background: none;
+         //   height: 100%;
+         //   padding: 20px;
+     }
+     
+     //logo
+     .leaseLabs {
+         width: 100%;
+     }
+     
+     // paralleogram for navbar special
+     .parallelogram {
+         width: 110px;
+         height: 100%;
+         transform: skew(-20deg);
+         background: $leaselab;
+     }
+     
+     ul.nav a:hover {
+         color: $leaselab !important;
+         text-transform: uppercase;
+     }
+     
+     //Container Left
+     #containerLeft ul {
+         list-style: none;
+         margin-left: -40px;
+     }
+     
+     #containerLeft li a {
+         text-decoration: none;
+         color: black;
+         font-size: 15px;
+     }
+     
+     #containerLeft li::before {
+         content: "\2022";
+         color: $leaselab;
+         font-size: 20px;
+     }
+     
+     // container left bubble chat
+     .bubble {
+         position: relative;
+         display: inline-block;
+         max-width: 100%;
+         min-height: 1.5em;
+         padding: 10px;
+         background: $gray;
+         border: $gray solid 4px;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         border-radius: 10px;
+         width: 300px;
+         text-align: left;
+         text-transform: uppercase;
+     }
+     
+     .bubble:after {
+         content: "";
+         position: absolute;
+         bottom: -15px;
+         left: 60%;
+         border-style: solid;
+         border-width: 15px 15px 0;
+         border-color: $gray transparent;
+         display: block;
+         width: 0;
+         z-index: 1;
+     }
+     
+     .bubble:before {
+         content: "";
+         position: absolute;
+         bottom: -19.5px;
+         left: calc(60% - 3px);
+         border-style: solid;
+         border-width: 18px 18px 0;
+         border-color: $gray transparent;
+         display: block;
+         width: 0;
+         z-index: 0;
+     }
+     
+     // Container Right Begin
+     h3 {
+         font-style: italic;
+         margin-bottom: 20px;
+         color: black;
+     }
+     
+     #containerRight {
+         border: 2px solid rgb(240, 233, 233);
+         border-top: none;
+         border-bottom: 7px solid rgb(240, 233, 233);
+         padding-bottom: 20px;
+     }
+     
+     // hover effect
+     .imageContainer {
+         position: relative;
+         width: 100%;
+         height: 225px;
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         border: 1px solid $leaselab;
+     }
+     
+     .overlay {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         opacity: 0;
+         transition: .5s ease;
+         background-color: #008CBA;
+     }
+     
+     .imageContainer:hover .overlay {
+         opacity: 0.4;
+     }
+     
+     .text {
+         color: white;
+         font-size: 20px;
+         font-weight: bold;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         text-align: center;
+         text-transform: uppercase;
+     }
+     
+     // three column images id within left container
+     #images {
+         padding-top: 45px;
+     }
+     
+     @media (max-width: 767px) {
+        .leaseLabs{
+            height: 200px;
+        }
+     }
