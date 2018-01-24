@@ -18,32 +18,32 @@ var images = {
 
 
 $(function () {
-for (var j in images) {
-    console.log(images[j]);
+    for (var j in images) {
+        console.log(images[j]);
 
-    console.log(JSON.stringify((images[j])));
-    // console.log(JSON.stringify((images[j].heading)));
-    // console.log("------------");
-    // console.log(((images[j].path)));
-    
-    var image = $("<div>", { "class": "row" });
-    var col = $("<div>").addClass("col-xs-12 col-sm-4 col-md-4 col-lg-4");
-    var divImageContainer = $("<div>").addClass("imageContainer");
-    divImageContainer.css("background-image", 'url("' + images[j].path + '")');
-    var divImageOverlay = $("<div>", { "class": "overlay" });
-    var text = $("<div>").addClass("text");
-    text.html(images[j].heading + " " + images[j].description );
-    
-    divImageOverlay.append(text);
-    divImageContainer.append(divImageOverlay);
-    col.append(divImageContainer);
-    image.append(col);
-    // image.append(text);
-    // col.append(image);
-    
-    $("#images").append(image);
-    
-}
+        console.log(JSON.stringify((images[j])));
+        // console.log(JSON.stringify((images[j].heading)));
+        // console.log("------------");
+        // console.log(((images[j].path)));
+
+        var image = $("<div>", { "class": "row" });
+        var col = $("<div>").addClass("col-xs-12 col-sm-4 col-md-4 col-lg-4");
+        var divImageContainer = $("<div>").addClass("imageContainer");
+        divImageContainer.css("background-image", 'url("' + images[j].path + '")');
+        var divImageOverlay = $("<div>", { "class": "overlay" });
+        var text = $("<div>").addClass("text");
+        text.html(images[j].heading + " " + images[j].description);
+
+        divImageOverlay.append(text);
+        divImageContainer.append(divImageOverlay);
+        col.append(divImageContainer);
+        image.append(col);
+        // image.append(text);
+        // col.append(image);
+
+        $("#images").append(image);
+
+    }
 
 });
 

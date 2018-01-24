@@ -5,7 +5,8 @@
   margin: 0; }
 
 h1 {
-  color: #00b4ff; }
+  color: #00b4ff;
+  margin-bottom: -20px; }
 
 .wrapper {
   height: auto !important;
@@ -15,6 +16,14 @@ h1 {
   /* Positioning */
   margin: 0 auto -100px;
   padding: 25px; }
+
+.navbar-nav > li {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+.navbar-default {
+  background: none;
+  padding: 10px; }
 
 .leaseLabs {
   width: 100%; }
@@ -35,11 +44,13 @@ ul.nav a:hover {
 
 #containerLeft li a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  font-size: 15px; }
 
 #containerLeft li::before {
   content: "\2022";
-  color: #00b4ff; }
+  color: #00b4ff;
+  font-size: 20px; }
 
 .bubble {
   position: relative;
@@ -80,11 +91,14 @@ ul.nav a:hover {
   width: 0;
   z-index: 0; }
 
+h3 {
+  font-style: italic;
+  margin-bottom: 20px; }
+
 #containerRight {
   border: 2px solid #f0e9e9;
   border-top: none;
-  border-bottom: 7px solid #f0e9e9;
-  padding: 10px; }
+  border-bottom: 7px solid #f0e9e9; }
 
 .imageContainer {
   position: relative;
@@ -113,12 +127,14 @@ ul.nav a:hover {
 .text {
   color: white;
   font-size: 20px;
+  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 @media only screen and (max-width: 34em) {
   #image {
