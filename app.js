@@ -26,13 +26,13 @@ $(function () {
         // console.log("------------");
         // console.log(((images[j].path)));
 
-        var image = $("<div>", { "class": "row col-xs-4" });
-        var col = $("<div>").addClass("col-xs-12");
+        var image = $("<div>", { "class": "row col-xs-12 col-sm-4 col-md-4" });
+        var col = $("<div>").addClass("col-xs-12 col-sm-12 col-md-12");
         var divImageContainer = $("<div>").addClass("imageContainer");
         divImageContainer.css("background-image", 'url("' + images[j].path + '")');
         var divImageOverlay = $("<div>", { "class": "overlay" });
         var text = $("<div>").addClass("text");
-        text.html(images[j].heading + " " + images[j].description);
+        text.html(images[j].heading + "<br>" + images[j].description);
 
         divImageOverlay.append(text);
         divImageContainer.append(divImageOverlay);
