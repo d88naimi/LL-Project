@@ -26,8 +26,8 @@ $(function () {
         // console.log("------------");
         // console.log(((images[j].path)));
 
-        var image = $("<div>", { "class": "row" });
-        var col = $("<div>").addClass("col-xs-12 col-sm-4 col-md-4 col-lg-4");
+        var image = $("<div>", { "class": "row col-xs-4" });
+        var col = $("<div>").addClass("col-xs-12");
         var divImageContainer = $("<div>").addClass("imageContainer");
         divImageContainer.css("background-image", 'url("' + images[j].path + '")');
         var divImageOverlay = $("<div>", { "class": "overlay" });
